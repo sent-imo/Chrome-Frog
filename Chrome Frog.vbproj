@@ -4,9 +4,11 @@
     <OutputType>WinExe</OutputType>
     <TargetFramework>net8.0-windows</TargetFramework>
     <RootNamespace>Chrome_Frog</RootNamespace>
-    <StartupObject>Sub Main</StartupObject>
-    <UseWindowsForms>true</UseWindowsForms>
+    <StartupObject>Chrome_Frog.My.MyApplication</StartupObject>
+    <UseWindowsForms>True</UseWindowsForms>
     <MyType>WindowsForms</MyType>
+    <UseWPF>True</UseWPF>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
   </PropertyGroup>
 
   <ItemGroup>
@@ -14,6 +16,14 @@
     <Import Include="System.Drawing" />
     <Import Include="System.Windows.Forms" />
   </ItemGroup>
+
+  <ItemGroup>
+    <Page Include="Application.xaml" />
+  </ItemGroup>
+
+	<ItemGroup>
+		<FrameworkReference Include="Microsoft.WindowsDesktop.App.WPF" />
+	</ItemGroup>
 
   <ItemGroup>
     <Compile Update="My Project\Application.Designer.vb">

@@ -1,4 +1,4 @@
-﻿Imports Microsoft.VisualBasic.ApplicationServices
+﻿Imports System.Windows
 
 Namespace My
     ' The following events are available for MyApplication:
@@ -23,7 +23,4 @@ Namespace My
     '   e.MinimumSplashScreenDisplayTime = 4000
     ' End Sub
 
-    Partial Friend Class MyApplication
-
-    End Class
 End Namespace
